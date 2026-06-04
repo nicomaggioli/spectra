@@ -12,7 +12,7 @@ addEventListener('pointermove', e => { tx = e.clientX; ty = e.clientY; dot.style
   cursor.style.transform = `translate(${cx}px,${cy}px) translate(-50%,-50%)`;
   requestAnimationFrame(loop);
 })();
-const linkSel = 'a, button, [data-magnetic], input, textarea, .tile';
+const linkSel = 'a, button, [data-magnetic], input, textarea';
 document.querySelectorAll(linkSel).forEach(el => {
   el.addEventListener('pointerenter', () => cursor.classList.add('is-link'));
   el.addEventListener('pointerleave', () => cursor.classList.remove('is-link'));
