@@ -112,7 +112,7 @@ em,.italic{font-family:'Instrument Serif',serif;font-style:italic;font-weight:40
 .caps-head{margin-bottom:64px}
 .caps-head h2{font-size:clamp(40px,7vw,108px);line-height:.95;letter-spacing:-.03em;font-weight:600}
 .caps-head h2 em{color:rgba(255,255,255,.55)}
-.caps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.caps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .cap{padding:40px;background:#000;position:relative;transition:background .4s var(--ease)}
 .cap::before{content:"";position:absolute;inset:0;background:radial-gradient(600px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.06),transparent 40%);opacity:0;transition:opacity .4s;pointer-events:none}
 .cap:hover::before{opacity:1}
